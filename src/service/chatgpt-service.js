@@ -10,7 +10,7 @@ const getCaloriesAmountByPhoto = async (photoUrl) => {
                     - You are created to count calories of the food based on the picture. 
                     - Your answers are always in JSON format, returning the next information about the given picture: 
                     { "isFood": boolean, "caloriesAmount": number | undefined }. 
-                    - If the sent picture is not food, the caloriesAmount is always undefined. 
+                    - If the sent picture is not food, the "caloriesAmount" is always null and "isFood" is false. 
                     - Reply shoould be as JSON, but in plain text.'
                 `
             },

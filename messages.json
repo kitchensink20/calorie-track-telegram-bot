@@ -1,3 +1,7 @@
 {
-    "welcome": "Welcome to the Calorie Tracker Bot! Send me a picture of your food, and I'll estimate the calories for you."
+    "welcome": "Welcome to the Calorie Tracker Bot! Send me a picture of your food, and I'll estimate the calories for you.",
+    "promptErrorMsg": "I can't understand you.. Please, send me a picture of a food.",
+    "awaitMsg": "Analyzing your food... This might take a few seconds.",
+    "processingErrorMsg": "An error occurred while processing your message. Please try again.",
+    "foodRecognizingError": "The image you sent is not recognized as containing food. Please send a clear picture of your food."
 }

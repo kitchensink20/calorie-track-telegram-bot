@@ -23,10 +23,7 @@ const UserSchema = new mongoose.Schema({
     },
     language_code: {
         type: String,
-    },
-    daily_goal: {
-        type: Number,
-    },
+    }
 })
 
 const User = mongoose.model('users', UserSchema);
