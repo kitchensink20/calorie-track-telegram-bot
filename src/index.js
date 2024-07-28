@@ -1,10 +1,8 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const bot = require('./bot');
-const { connectDB } = require('./config/db.js');
 
 dotenv.config();
-connectDB();
 
 bot.launch().then(() => {
     console.log('Bot is running.');

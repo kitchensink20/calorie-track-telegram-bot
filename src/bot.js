@@ -1,7 +1,6 @@
 const dotenv = require('dotenv');
 const { Telegraf, Scenes } = require('telegraf');
 const messages = require('../messages.json'); 
-const { createUserIfNotExist } = require('./service/user-service');
 const { getCaloriesAmountByPhoto } = require('./service/chatgpt-service');
 const { getParsedReply } = require('./service/messages-service');
 
@@ -12,8 +11,6 @@ const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
 bot.use(stage.middleware());
 
 bot.command('start', async (ctx) => {
-    const user = ctx.from;
-    await createUserIfNotExist(user);
     bot.telegram.sendMessage(ctx.chat.id, messages.welcome);
 });
 
